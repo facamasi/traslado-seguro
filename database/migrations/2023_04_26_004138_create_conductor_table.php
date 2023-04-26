@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('conductor', function (Blueprint $table) {
             $table->id();
-            $table->string("Nombres", 50);
-            $table->string("Apellidos", 50);
+            $table->char("Nombres", 50);
+            $table->char("Apellidos", 50);
             $table->string("Tipo de vehiculo");
-            $table->int("Numero de licencia");
+            $table->integer("Numero de licencia");
             $table->timestamps();
         });
     }
