@@ -13,12 +13,14 @@ return new class extends Migration
     {
         Schema::create('pacientes', function (Blueprint $table) {
             $table->id();
-            $table->char("Nombres", 50);
-            $table->char("Apellidos", 50);
-            $table->integer("Contacto", 12);
-            $table->string("Correo");
-            $table->date("Fecha de naciemiento");
+            $table->char('nombre',50);
+            $table->char('apellido',50);
+            $table->string('genero',50);
+            $table->string('fecha_nacimiento',50);
+            $table->string('contacto',50);
+            $table->string('e-mail',50);
             $table->timestamps();
+
         });
     }
     /**

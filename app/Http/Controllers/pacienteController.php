@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\paciente;
 
 class PacienteController extends Controller
 {
@@ -12,8 +13,9 @@ class PacienteController extends Controller
      */
     public function index()
     {
-        //
-    }
+        $pacientes = pacientes::all();
+        return view("traslado.index",['pacientes'=>$pacientes]);
+        }
 
     /**
      * Show the form for creating a new resource.
