@@ -14,7 +14,7 @@ class PacienteController extends Controller
     public function index()
     {
         $pacientes = pacientes::all();
-        return view("traslado.index",['pacientes'=>$pacientes]);
+        return view("pacientes.index",['pacientes'=>$pacientes]);
         }
 
     /**

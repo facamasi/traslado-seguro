@@ -39,7 +39,7 @@
                 <td>{{$pacientes->fecha_naciemiento}}</td>
                 <td>{{$pacientes->contacto}}</td>
                 <td>{{$pacientes->E-mail}}</td>
-                {{-- <th><span>Actions</span></th> --}}
+                <th><span>Actions</span></th>
 
                 <td>
                     <a href="{{route("pacientes.edit", ["paciente" => $pacientes->id])}}"
